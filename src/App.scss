@@ -1,0 +1,59 @@
+$border-radius: 25%; 
+
+.App {
+  text-align: center;
+  
+
+  .wrapper{
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    max-width: 40%;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  #new-quote{
+    color: white !important;
+  }
+  #tweet-quote{
+    display: flex;
+    padding: 10px;
+    color: white !important;
+    border-radius: $border-radius;
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+.myName{
+  padding-top: 5px;
+  margin-bottom: -5px;
+  font-size: 10px;
+}
+
+.quote-text {
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
