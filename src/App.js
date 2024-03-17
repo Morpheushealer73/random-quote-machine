@@ -57,12 +57,12 @@ function App() {
       <header className="App-header" style={elementStyle}>
       
     <Wrapper>
-        <p id="text" class={`quote-text ${active ? 'visible' : 'hidden'}`}>
-          {quote}
-        </p>
-        <p id="author" class={`quote-text ${active ? 'visible' : 'hidden'}`}>
+        <h1 id="text" class={`quote-text ${active ? 'visible' : 'hidden'}`}>
+          "{quote}"
+        </h1>
+        <h3 id="author" class={`quote-text ${active ? 'visible' : 'hidden'}`}>
           - {author}
-        </p>
+        </h3>
 
         <div class="button-container">
               <a id="tweet-quote" href="twitter.com/intent/tweet" target="_self" style={elementStyle}>
