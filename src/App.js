@@ -24,7 +24,6 @@ const Wrapper = ({children}) => {
 };
 
 function App() {
-  const [randomNum, setRandomNum] = useState(0)
   const [quote, setQuote] = useState(quotes[0].quote);
   const [author, setAuthor] = useState(quotes[0].author);
   const [elementColor, setElementColor] = useState('#282c34');
@@ -40,7 +39,6 @@ function App() {
   const changeQuote = () => {
       let rand = Math.floor(Math.random() * quotes.length);
       let newColor = colorArray[Math.floor(Math.random() * colorArray.length)];
-      setRandomNum(rand)
       setQuote(quotes[rand].quote);
       setAuthor(quotes[rand].author);
       setElementColor(newColor);
